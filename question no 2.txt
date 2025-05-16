@@ -1,0 +1,31 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+public class UniqueElementChecker {
+   public UniqueElementChecker() {
+   }
+
+   public static void main(String[] var0) {
+      int[] var1 = new int[]{2, 5, 7, 6, 6, 8};
+      byte var2 = 5;
+      if (isUnique(var1, var2)) {
+         System.out.println("The array contains a unique target element.");
+      } else {
+         System.out.println("The array does not contain a unique target element.");
+      }
+
+   }
+
+   static boolean isUnique(int[] var0, int var1) {
+      int var2 = 0;
+
+      for(int var3 = 0; var3 < var0.length; ++var3) {
+         if (var0[var3] == var1) {
+            ++var2;
+            if (var2 > 1) {
+               return false;
+            }
+         }
+      }
+
+      return var2 == 1;
+   }
+}
