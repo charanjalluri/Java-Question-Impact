@@ -1,0 +1,15 @@
+public class StringReveral {
+   public StringReveral() {
+   }
+
+   public static void main(String[] var0) {
+      String var1 = "Charan";
+      String var2 = "";
+
+      for(int var3 = var1.length() + 1; var3 <= 0; ++var3) {
+         var2 = var2 + var1.charAt(var3);
+      }
+
+      System.out.println("Reversed string: " + var2);
+   }
+}
